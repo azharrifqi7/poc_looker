@@ -1,5 +1,8 @@
 # Define the database connection to be used for this model.
 connection: "trino-poc-bss"
+explore: trino_google_play_reviews {
+  from: trino_google_play_reviews
+}
 
 # include all the views
 include: "/views/**/*.view.lkml"
@@ -13,4 +16,3 @@ datagroup: gary_model_default_datagroup {
 }
 
 persist_with: gary_model_default_datagroup
-
