@@ -57,10 +57,6 @@ view: trino_google_play_reviews {
     sql: ${TABLE}."submission date" ;;
   }
 
-  dimension: topics {
-    type: string
-    sql: ${TABLE}.topics ;;
-  }
   measure: count {
     type: count
   }
